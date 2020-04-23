@@ -1,5 +1,6 @@
 package com.thepracticaldeveloper.reactiveweb.controller;
 
+import com.thepracticaldeveloper.reactiveweb.configuration.QuijoteDataLoader;
 import com.thepracticaldeveloper.reactiveweb.domain.Quote;
 import com.thepracticaldeveloper.reactiveweb.repository.QuoteMongoBlockingRepository;
 
@@ -26,6 +27,9 @@ public class DeleteQuoteControllerIntegrationTest {
 
     @MockBean
     private QuoteMongoBlockingRepository quoteMongoBlockingRepository;
+
+    @MockBean
+    private QuijoteDataLoader quijoteDataLoader;
 
     @LocalServerPort
     private int serverPort;
